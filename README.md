@@ -26,9 +26,19 @@ This project is part of my learning journey to understand:
 ---
 
 ## Usage
-
+### List all services
 ```bash
-python3 usi.py
+python3 usi.py list
+```
+
+### List only failed services
+```bash
+python3 usi.py list --failed
+```
+
+### Check status of a specific service
+```bash
+python3 usi.py status bluetooth
 ```
 ---
 
