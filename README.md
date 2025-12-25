@@ -29,7 +29,7 @@ This project is part of my learning journey to understand:
 
 ```bash
 python3 usi.py
-
+```
 ---
 
 ## Future Improvements
