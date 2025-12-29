@@ -3,7 +3,7 @@
 import argparse
 import json
 from inspector.services import list_services, get_service_status
-
+from inspector.errors import SystemctlError
 def cli_main():
     # Initialising the parser 
     parser = argparse.ArgumentParser(description="Ubuntu Service Inspector (usi)")
