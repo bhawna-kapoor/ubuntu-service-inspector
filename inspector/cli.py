@@ -32,8 +32,11 @@ def cli_main():
     
     # if command given is 'status'
     elif args.command == 'status':
-        data = get_service_status(args.service_name)
-        print(data)
+        try:
+            data = get_service_status(args.service_name)
+            print(data)
+        except SystemctlError as e:
+            print(f"Error: {e}")
 
 
 if __name__=="__main__":
