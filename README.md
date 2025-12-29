@@ -18,6 +18,13 @@ This project is part of my learning journey to understand:
 
 ---
 
+## Project Structure
+- `inspector/`: The core package containing logic for service inspection and error handling.
+- `usi.py`: The main entry point/CLI script.
+- `.gitignore`: Ensures environment-specific files aren't tracked.
+
+---
+
 ## Requirements
 
 - Ubuntu / Linux system
