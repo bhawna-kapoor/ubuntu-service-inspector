@@ -20,8 +20,9 @@ This project is part of my learning journey to understand:
 
 ## Project Structure
 - `inspector/`: The core package containing logic for service inspection and error handling.
-- `usi.py`: The main entry point/CLI script.
+- `usi.py`: A lightweight entry script for running the CLI without installing the package.
 - `.gitignore`: Ensures environment-specific files aren't tracked.
+- `pyproject.toml`: Defines package metadata and the installed `usi` CLI entry point.
 
 ---
 
@@ -32,24 +33,47 @@ This project is part of my learning journey to understand:
 
 ---
 
+## Installation (optional)
+- For development or local usage:
+```bash
+pip install -e .
+```
+  - This installs the `usi` command in editable mode, so code changes take effect immediately.
+
 ## Usage
-### List all services
+### Using the installed CLI (recommended)
+#### List all services
+```bash
+usi list
+```
+
+#### List only failed services
+```bash
+usi list --failed
+```
+
+#### Check status of a specific service
+```bash
+usi status ghost-service
+```
+
+### Running directly (no installation required)
+#### List all services
 ```bash
 python3 usi.py list
 ```
 
-### List only failed services
+#### List only failed services
 ```bash
 python3 usi.py list --failed
 ```
 
-### Check status of a specific service
+#### Check status of a specific service
 ```bash
 python3 usi.py status bluetooth
 ```
 ---
 
 ## Future Improvements
- - Improve error handling
  - Add unit tests
- - Better formatted output
+ - Add JSON output support for automation
